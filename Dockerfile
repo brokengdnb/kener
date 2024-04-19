@@ -20,7 +20,7 @@ VOLUME $data_dir
 ENV CONFIG_DIR=$data_dir
 
 COPY docker/root/ /
-
+COPY docker/configCustom/ /config
 # Dir ENVs need to be set before building or else build throws errors
 ENV PUBLIC_KENER_FOLDER=/config/static \
     MONITOR_YAML_PATH=/config/monitors.yaml \
