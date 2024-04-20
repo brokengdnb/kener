@@ -14,7 +14,7 @@
     url: https://git.debase.online/
 - name: Ntfy
   description: Personal notification server hosten in Amsterdam
-  tag: "git"
+  tag: "ntfy"
   image: "/static/images/favicon.ico"
   api:
     method: GET
