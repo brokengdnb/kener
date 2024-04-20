@@ -25,6 +25,6 @@ services:
       #- SITE_YAML_PATH=/config/site.yaml
 
     ports:
-      - '0.0.0.0:3000:3000/tcp'
+      - "0.0.0.0:10000:3000"
     volumes:
       - '/configCustom:/config:rw'

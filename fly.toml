@@ -1,15 +1,16 @@
-# fly.toml app configuration file generated for debase-status on 2024-04-20T18:12:02+02:00
+# fly.toml app configuration file generated for debase-status-autumn-pond-5264 on 2024-04-20T18:29:54+02:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'debase-status'
+app = 'debase-status-autumn-pond-5264'
 primary_region = 'ams'
 
 [build]
+  dockerfile = "Dockerfile"
 
 [http_service]
-  internal_port = 3000
+  internal_port = 10000
   force_https = true
   auto_stop_machines = false
   auto_start_machines = true
