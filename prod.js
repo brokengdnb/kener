@@ -25,6 +25,4 @@ app.get("/sitemap.xml", (req, res) => {
 
 app.use(handler);
 
-app.listen(PORT, () => {
-    console.log("Kener is running on port " + PORT + "!");
-});
+app.listen(PORT, '0.0.0.0');

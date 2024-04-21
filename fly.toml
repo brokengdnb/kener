@@ -1,21 +1,45 @@
-# fly.toml app configuration file generated for debase-status-autumn-pond-5264 on 2024-04-20T18:29:54+02:00
+# fly.toml app configuration file generated for debase-status-wild-voice-7194 on 2024-04-22T00:34:49+02:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'debase-status-autumn-pond-5264'
+app = 'debase-status'
 primary_region = 'ams'
+swap_size_mb = 128
 
 [build]
-  dockerfile = "Dockerfile"
+  dockerfile = 'Dockerfile'
+
+[deploy]
+  strategy = 'bluegreen'
+
+[env]
+  LOG_LEVEL = 'debug'
+  PUBLIC_KENER_FOLDER = '/config/static/kener'
+
+[[mounts]]
+  source = 'kener_data'
+  destination = '/configBackup'
 
 [http_service]
-  internal_port = 10000
+  internal_port = 3000
   force_https = true
   auto_stop_machines = false
-  auto_start_machines = true
+  auto_start_machines = false
   min_machines_running = 1
   processes = ['app']
+
+  [http_service.concurrency]
+    type = 'requests'
+    hard_limit = 250
+    soft_limit = 200
+
+  [[http_service.checks]]
+    interval = '30s'
+    timeout = '5s'
+    grace_period = '10s'
+    method = 'GET'
+    path = '/healthcheck'
 
 [[vm]]
   size = 'shared-cpu-1x'

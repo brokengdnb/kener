@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Homepage",
+        "description": "Static jakyll page on netlify. <a href=\"https://master--jekyll-test-debase.netlify.app/\" class=\"font-medium underline underline-offset-4\" target=\"_blank\">https://master--jekyll-test-debase.netlify.app/</a>",
+        "tag": "homepage",
+        "image": "https://master--jekyll-test-debase.netlify.app/assets/favicons/favicon-32x32.png",
+        "api": {
+            "method": "GET",
+            "url": "https://master--jekyll-test-debase.netlify.app/",
+            "eval": "(function (statusCode, responseTime, responseData) {\n\tlet statusCodeShort = Math.floor(statusCode/100);\n    if(statusCode == 429 || (statusCodeShort >=2 && statusCodeShort <= 3)) {\n        return {\n\t\t\tstatus: 'UP',\n\t\t\tlatency: responseTime,\n        }\n    } \n\treturn {\n\t\tstatus: 'DOWN',\n\t\tlatency: responseTime,\n\t}\n})",
+            "timeout": 10000
+        },
+        "folderName": "homepage",
+        "path0Day": "./static/kener/homepage.0day.utc.json",
+        "path90Day": "./static/kener/homepage.90day.utc.json",
+        "hasAPI": true
+    },
+    {
+        "name": "GitLab",
+        "description": "Personal Gitlab hosten in DE <a href=\"https://git.debase.online/\" class=\"font-medium underline underline-offset-4\" target=\"_blank\">https://git.debase.online/</a>",
+        "tag": "git",
+        "image": "https://git.debase.online/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png",
+        "api": {
+            "method": "GET",
+            "url": "https://git.debase.online/",
+            "eval": "(function (statusCode, responseTime, responseData) {\n\tlet statusCodeShort = Math.floor(statusCode/100);\n    if(statusCode == 429 || (statusCodeShort >=2 && statusCodeShort <= 3)) {\n        return {\n\t\t\tstatus: 'UP',\n\t\t\tlatency: responseTime,\n        }\n    } \n\treturn {\n\t\tstatus: 'DOWN',\n\t\tlatency: responseTime,\n\t}\n})",
+            "timeout": 10000
+        },
+        "folderName": "gitlab",
+        "path0Day": "./static/kener/gitlab.0day.utc.json",
+        "path90Day": "./static/kener/gitlab.90day.utc.json",
+        "hasAPI": true
+    },
+    {
+        "name": "Ntfy",
+        "description": "Personal notification server hosten in Amsterdam <a href=\"https://ntfy.debase.online/\" class=\"font-medium underline underline-offset-4\" target=\"_blank\">https://ntfy.debase.online/</a>",
+        "tag": "ntfy",
+        "image": "https://ntfy.debase.online/static/images/favicon.ico",
+        "api": {
+            "method": "GET",
+            "url": "https://ntfy.debase.online/",
+            "eval": "(function (statusCode, responseTime, responseData) {\n\tlet statusCodeShort = Math.floor(statusCode/100);\n    if(statusCode == 429 || (statusCodeShort >=2 && statusCodeShort <= 3)) {\n        return {\n\t\t\tstatus: 'UP',\n\t\t\tlatency: responseTime,\n        }\n    } \n\treturn {\n\t\tstatus: 'DOWN',\n\t\tlatency: responseTime,\n\t}\n})",
+            "timeout": 10000
+        },
+        "folderName": "ntfy",
+        "path0Day": "./static/kener/ntfy.0day.utc.json",
+        "path90Day": "./static/kener/ntfy.90day.utc.json",
+        "hasAPI": true
+    }
+]

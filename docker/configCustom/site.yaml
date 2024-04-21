@@ -1,8 +1,8 @@
-title: "Kener"
+title: "Status"
 home: "/"
 logo: "/logo.png"
 github:
-  owner: "rajnandan1"
+  owner: "brokengdnb"
   repo: "kener"
   incidentSince: 48
 metaTags:
@@ -20,17 +20,16 @@ metaTags:
   twitter:title: "Kener: Open-Source and Modern looking Node.js Status Page for Effortless Incident Management"
   twitter:description: "Kener: Open-source Node.js status page tool, designed to make service monitoring and incident handling a breeze. It offers a sleek and user-friendly interface that simplifies tracking service outages and improves how we communicate during incidents. And the best part? Kener integrates seamlessly with GitHub, making incident management a team effort—making it easier for us to track and fix issues together in a collaborative and friendly environment."
 nav:
-  - name: "Documentation"
-    url: "/docs"
+  - name: "Homepage"
+    url: "https://debase.online"
   - name: "Github"
-    url: "https://github.com/rajnandan1/kener"
-hero:
-  title: Kener is a Open-Source Status Page System
-  subtitle: Let your users know what's going on.
+    url: "https://github.com/brokengdnb/kener"
+#hero:
+#  title: Kener is a Open-Source Status Page System
+#  subtitle: Let your users know what's going on.
 footerHTML: |
   Made using 
   <a href="https://github.com/rajnandan1/kener" target="_blank" rel="noreferrer" class="font-medium underline underline-offset-4">
     Kener
   </a>
-  an open source status page system built with Svelte and TailwindCSS.
     
